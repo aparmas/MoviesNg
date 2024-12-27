@@ -1,0 +1,21 @@
+@if (!list)
+{
+  <img src="loading.gif" />
+}
+@else if (list.length === 0)
+{
+  <div #empty>
+    <ng-content select="[empty-content]"></ng-content>
+  </div>
+  @if (!empty.innerHTML.trim())
+  {
+    <div>
+      <p> There is not movies to be show</p>
+    </div>
+  }
+
+}
+@else {
+<ng-content select="[content]"></ng-content>
+}
+
