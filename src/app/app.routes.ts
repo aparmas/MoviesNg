@@ -11,6 +11,7 @@ import { GenreEditComponent } from './genre/genre-edit/genre-edit.component';
 import { ActorEditComponent } from './actors/actor-edit/actor-edit.component';
 import { CinemaEditComponent } from './cinemas/cinema-edit/cinema-edit.component';
 import { MovieEditComponent } from './movies/movie-edit/movie-edit.component';
+import { FilterMoviesComponent } from './movies/filter-movies/filter-movies.component';
 
 export const routes: Routes = [
   {path:'', component: LandingPageComponent},
@@ -25,5 +26,6 @@ export const routes: Routes = [
   {path:'cinema/edit/:id', component: CinemaEditComponent},
   {path:'movie/create', component: MovieCreateComponent},
   {path:'movie/edit:id', component: MovieEditComponent},
+  {path:'movies/filter', component: FilterMoviesComponent},
   {path:'**', redirectTo: ''}
 ];
